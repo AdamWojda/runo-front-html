@@ -1,24 +1,17 @@
 {
-  "author": "WeAreAthlon <hello@weareathlon.com> (https://www.weareathlon.com)",
-  "name": "@weareathlon/frontend-webpack-boilerplate",
+  "author": "AdamWojda <adam.wojda@boostit.services> (https://www.boostit.services)",
+  "name": "RunoBlog",
   "version": "5.14.0",
-  "description": "Starter project template boilerplate based on Webpack with SASS/PostCSS and babel ES6/7 support.",
-  "homepage": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate#readme",
+  "description": "Free HTML blog template.",
+  "homepage": "https://www.boostit.services/runo-blog-template",
   "browserslist": [
     "last 2 versions",
     "> 5%"
   ],
   "bugs": {
-    "url": "https://github.com/WeAreAthlon/frontend-webpack-boilerplate/issues",
-    "email": "plamen@athlonsofia.com"
+    "url": "https://github.com/AdamWojda/runo-front-html/issues",
+    "email": "adam.wojda@boostit.services"
   },
-  "contributors": [
-    {
-      "name": "Plamen Nikolov",
-      "email": "me@pnikoloff.com",
-      "url": "https://pnikoloff.com"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.0",
@@ -70,7 +63,7 @@
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git@github.com:WeAreAthlon/frontend-webpack-boilerplate.git"
+    "url": "git@github.com:AdamWojda/runo-front-html.git"
   },
   "scripts": {
     "build": "webpack --config configuration/webpack.dev.config.js --mode=development",

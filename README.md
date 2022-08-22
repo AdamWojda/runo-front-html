@@ -1,7 +1,5 @@
 # Runo - Free HTML Blog Template
 
-# Setup
-
 ## Installation
 
 1. Extract the release archive to a new directory, rename it to your project name and browse the directory.

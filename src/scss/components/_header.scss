@@ -1,0 +1,32 @@
+.header {
+  @apply py-2 absolute bg-zinc-900/[.5] w-full top-0 z-10;
+
+  &__container {
+    @apply flex justify-between items-center;
+  }
+
+  &__logo {
+    @apply text-white uppercase text-2xl;
+  }
+
+  &__nav {
+    @apply text-white flex;
+
+    .nav {
+      @apply relative;
+
+      &:after {
+        @apply block h-full w-[1px] block bg-neutral-400 mr-2;
+        content: '';
+      }
+
+      &:last-child:after {
+        @apply hidden;
+      }
+    }
+  }
+
+  &--static {
+    @apply static;
+  }
+}

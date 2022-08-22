@@ -1,0 +1,66 @@
+.mobilePhoneBlock {
+  @apply flex;
+  font-family: 'Raleway';
+
+  &__col {
+    @apply basis-1/2 w-full;
+
+    &--image {
+      @apply
+      flex justify-center
+      lg:justify-end;
+    }
+  }
+
+  &__wrapper {
+    @apply
+    flex flex-col-reverse justify-between p-5 rounded-[100px] items-center bg-gradient-to-r from-[#EDEEF6] to-[#ffffff]
+    md:px-[40px] md:flex-row
+    lg:px-[90px];
+  }
+
+  &__header {
+    @apply
+    text-[45px] leading-[45px] font-bold mb-5 text-black
+    md:text-[57px] md:leading-[67px];
+  }
+
+  &__content {
+    @apply
+    text-base text-[#868686] leading-[25px]
+    md:text-2xl md:leading-[38px];
+  }
+
+  &--yellow {
+    @apply overflow-hidden md:overflow-visible;
+  }
+
+  &--yellow &__header {
+    @apply text-white mb-10 inline-block;
+  }
+
+  &--yellow &__wrapper {
+    @apply bg-gradient-to-r from-[#FB8770] to-[#FB8770] pb-0;
+  }
+
+  &--yellow &__phone {
+    @apply relative;
+  }
+
+  &--yellow &__accent {
+    @apply absolute;
+
+    &.first {
+      @apply top-[70%] right-[-40%];
+    }
+
+    &.second {
+      @apply top-[102%] left-[-15%];
+    }
+
+    &.third {
+      @apply top-[50%] left-[-25%];
+    }
+  }
+
+}

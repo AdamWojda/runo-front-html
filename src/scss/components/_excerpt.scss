@@ -1,0 +1,7 @@
+.excerpt {
+  @apply bg-[#343A40];
+
+  &__container {
+    @apply text-white flex justify-between;
+  }
+}

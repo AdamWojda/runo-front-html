@@ -1,0 +1,44 @@
+.textImageBlock {
+  @apply flex flex-col-reverse justify-between items-center mx-0;
+  @include mobile('md', ('mx-[-20px]'));
+  @include mobile('lg', ('flex-row'));
+
+  &--reverse {
+    @apply flex-col-reverse;
+    @include mobile('lg', ('flex-row-reverse'));
+  }
+
+  &__col {
+    @apply basis-1/2 w-full px-5;
+
+    &--image {
+      @apply mb-16 lg:mb-0;
+
+      img {
+        @apply md:m-auto;
+      }
+    }
+  }
+
+  &__header {
+    @apply
+    text-[33px] font-medium mb-8 leading-[35px]
+    md:text-[44px] md:leading-[70px];
+
+    strong {
+      @apply font-bold;
+    }
+  }
+
+  &__content {
+    @apply text-[#4F5665] text-base leading-[30px] mb-10;
+
+    p {
+      @apply mb-5 block;
+
+      &:last-child {
+        @apply mb-0;
+      }
+    }
+  }
+}

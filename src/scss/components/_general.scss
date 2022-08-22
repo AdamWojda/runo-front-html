@@ -1,0 +1,9 @@
+html {
+  font-family: font(Spartan);
+}
+
+.container {
+  @apply p-5 text-[#0B132A] text-center max-w-[100%] w-full;
+  @include mobile('md', ('mx-auto', 'max-w-[1300px]'));
+  @include mobile('lg', ('text-left'));
+}

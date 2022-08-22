@@ -1,0 +1,19 @@
+.footer {
+  @apply bg-[#212529] py-16 text-white;
+
+  &__container {
+    @apply text-white flex justify-between;
+  }
+
+  &__content {
+    @apply flex flex-col leading-6;
+
+    p {
+    }
+  }
+
+  &__header {
+    @apply text-xl mb-5;
+    font-family: font('Lora');
+  }
+}

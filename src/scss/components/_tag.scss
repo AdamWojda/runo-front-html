@@ -1,0 +1,11 @@
+.tag {
+  @apply bg-white/[.15] px-4 pt-[5px] pb-1 rounded-full inline-block;
+
+  &:hover {
+    @apply text-[#000];
+  }
+
+  &--dark {
+    @apply bg-black/[.15];
+  }
+}

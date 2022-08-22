@@ -1,0 +1,11 @@
+.button {
+  @apply px-8 py-5 rounded-[10px] font-bold text-base drop-shadow-xl inline-block hover:drop-shadow-md transition-all;
+
+  &--red {
+    @apply bg-[#F53838] text-white;
+  }
+
+  &--purple {
+    @apply bg-[#5956E9] text-white;
+  }
+}

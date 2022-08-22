@@ -1,0 +1,7 @@
+.logo {
+  @apply flex items-center;
+
+  &__slogan {
+    @apply text-xl ml-2 font-medium leading-[0];
+  }
+}

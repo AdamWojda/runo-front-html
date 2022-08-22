@@ -1,0 +1,24 @@
+.section {
+  $section: &;
+  @apply pb-5 md:pb-8 lg:pb-16 w-full;
+
+  &__content,
+  &__header {
+    @apply pb-10;
+  }
+
+  &__footer {
+    @apply
+    pt-5 flex justify-center items-center
+    md:pt-10
+    lg:pt-20;
+  }
+
+  &--nomargin {
+    @apply m-0 p-0;
+  }
+
+  &--ptop {
+    @apply pt-10;
+  }
+}

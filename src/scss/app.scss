@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* CSS print */
+@import 'base/print';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Splide Carousel */
+@import 'splide/template/default/index';
+
+/* Utils */
+@import 'components/heading';
+@import 'components/post';
+/* Components */
+@import 'components/general';
+@import 'components/block';
+@import 'components/button';
+@import 'components/carousel';
+@import 'components/excerpt';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/list';
+@import 'components/logo';
+@import 'components/mobilePhoneBlock';
+@import 'components/nav';
+@import 'components/section';
+@import 'components/tag';
+@import 'components/textImageBlock';
+@import 'components/accordion';
+@import 'components/archive';
+@import 'components/services';

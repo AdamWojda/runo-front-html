@@ -1,0 +1,8 @@
+.heading {
+  @apply font-bold text-4xl text-zinc-800;
+  font-family: font(Lora);
+
+  &--small {
+    @apply font-bold text-xl mb-5;
+  }
+}

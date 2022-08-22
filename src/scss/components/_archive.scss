@@ -1,0 +1,14 @@
+.archive {
+  &__container {
+    @apply flex;
+  }
+
+  &__sidebar {
+    @apply basis-1/4;
+  }
+
+  &__list {
+    @apply basis-3/4;
+  }
+
+}

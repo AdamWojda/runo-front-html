@@ -1,0 +1,73 @@
+.carousel {
+  $carousel: &;
+
+  &__image {
+    @apply w-full h-full;
+  }
+
+  &__wrapper {
+    @apply absolute top-0 w-full h-full;
+  }
+
+  &--theme1 {
+    .splide {
+      &__pagination {
+        @apply justify-start px-[70px] mb-8 container;
+      }
+    }
+
+    #{$carousel}__item {
+      @apply justify-center items-center flex;
+
+      &--white * {
+        @apply text-white;
+      }
+
+      &--black * {
+        @apply text-black;
+      }
+    }
+
+    #{$carousel}__wrapper {
+      @apply flex items-start text-white flex-col justify-center py-6 px-[70px] container mx-auto;
+      @include mobile('sm', ('py-16'));
+      @include mobile('md', ('py-28'));
+      @include mobile('lg', ('py-36'));
+    }
+
+    #{$carousel}__accent {
+      @apply mb-4;
+    }
+
+    #{$carousel}__title {
+      @apply mb-4;
+    }
+
+    #{$carousel}__content {
+      @apply flex items-center;
+    }
+
+    #{$carousel}__date {
+      @apply relative flex items-center;
+      &:after {
+        @apply w-[50px] h-[1px] bg-neutral-100 mx-5;
+        content: '';
+      }
+    }
+
+    #{$carousel}__description {
+
+    }
+  }
+
+  &--theme2 {
+    .splide {
+      &__arrows {
+        position: absolute;
+        width: calc(100% + 100px);
+        left: -50px;
+        top: 50%;
+      }
+    }
+  }
+}

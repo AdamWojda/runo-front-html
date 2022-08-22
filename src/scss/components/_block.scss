@@ -1,0 +1,80 @@
+.block {
+  $block: &;
+
+  &--popular {
+    #{$block}__header {
+      @apply mb-10;
+    }
+
+    #{$block}__filters {
+      @apply mb-10 flex justify-between;
+    }
+  }
+
+  &--image {
+    @apply relative flex justify-center w-full;
+
+    #{$block}__accent {
+      @apply px-10 container;
+      @include absolute-center();
+
+      &--white * {
+        @apply text-white;
+      }
+
+      &--black * {
+        @apply text-black;
+      }
+    }
+
+    #{$block}__content,
+    #{$block}__tag,
+    #{$block}__separator,
+    #{$block}__header {
+      @apply mb-10;
+    }
+
+    #{$block}__date,
+    #{$block}__content {
+      font-family: font('Lora');
+    }
+
+    #{$block}__separator {
+      @apply w-[50px] h-[1px] block bg-white;
+    }
+
+    #{$block}__image {
+      @apply w-full;
+    }
+  }
+
+  &--theme1 {
+    #{$block}__image {
+      img {
+        @apply max-h-96;
+      }
+    }
+
+    #{$block}__accent {
+      @apply text-left items-start;
+
+      img {
+        @apply max-h-96;
+      }
+    }
+
+    #{$block}__separator {
+      @apply mt-5;
+    }
+
+    #{$block}__content,
+    #{$block}__tag,
+    #{$block}__separator {
+      @apply mb-5;
+    }
+  }
+
+  &--text {
+    @apply bg-black/[.05];
+  }
+}

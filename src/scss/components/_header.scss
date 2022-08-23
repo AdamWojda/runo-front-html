@@ -1,5 +1,6 @@
 .header {
-  @apply py-2 absolute bg-zinc-900/[.5] w-full top-0 z-10;
+  @apply absolute bg-zinc-900/[.5] w-full top-0 z-10;
+  @include mobile('md', ('py-2'));
 
   &__container {
     @apply flex justify-between items-center;
@@ -10,7 +11,8 @@
   }
 
   &__nav {
-    @apply text-white flex;
+    @apply text-white hidden;
+    @include mobile('md', ('flex'));
 
     .nav {
       @apply relative;

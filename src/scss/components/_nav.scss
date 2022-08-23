@@ -1,6 +1,7 @@
 .nav {
   $nav: &;
-  @apply flex items-center;
+  @apply flex flex-col items-center;
+  @include mobile('lg', 'flex-row');
 
   &__item {
     @apply mr-2 px-2 pt-1;
@@ -20,10 +21,14 @@
   }
 
   &--filters {
+    @apply flex flex-row flex-wrap;
+
     #{$nav}__item {
-      @apply text-base;
+      @apply text-base basis-1/2 m-0;
+      @include mobile('lg', ('basis-[auto]'));
       font-family: font(Lora);
     }
+
     #{$nav}__link {
       transition: border-bottom-color .2s linear;
       border-bottom: 2px solid transparent;
@@ -36,7 +41,8 @@
   }
 
   &--col {
-    @apply flex flex-col items-start;
+    @apply flex flex-col items-center;
+    @include mobile('lg', ('items-start'));
 
     #{$nav}__item {
       @apply p-0 mb-5;

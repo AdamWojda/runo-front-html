@@ -34,12 +34,19 @@ class Carousel {
         arrows       : false,
         autoplay     : 'pause',
         intersection : this.intersectionSettings(),
+        perPage      : 1,
       },
       'carousel': {
         type         : 'loop',
         arrows       : true,
         autoplay     : 'pause',
+        perPage      : 3,
         intersection : this.intersectionSettings(),
+        breakpoints: {
+          1200: { arrows: false },
+          800 : { perPage: 1 },
+          640 : {},
+        },
       }
     };
     return configurations[type];

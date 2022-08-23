@@ -1,6 +1,6 @@
 .section {
   $section: &;
-  @apply pb-5 md:pb-8 lg:pb-16 w-full;
+  @apply pb-5 md:pb-8 lg:pb-16 w-full overflow-hidden;
 
   &__content,
   &__header {

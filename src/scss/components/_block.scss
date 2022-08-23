@@ -7,7 +7,13 @@
     }
 
     #{$block}__filters {
-      @apply mb-10 flex justify-between;
+      @apply mb-10 flex flex-col justify-between;
+      @include mobile('lg', ('flex-row'));
+
+      .nav {
+        @apply mb-5;
+        @include mobile('lg', ('mb-0'));
+      }
     }
   }
 
@@ -44,7 +50,11 @@
     }
 
     #{$block}__image {
-      @apply w-full;
+      @apply w-full min-h-[600px];
+
+      img {
+        height: 100%;
+      }
     }
   }
 

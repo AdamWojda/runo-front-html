@@ -30,9 +30,9 @@
 
     #{$carousel}__wrapper {
       @apply flex items-center text-white flex-col justify-center py-6 px-[70px] container mx-auto;
-      @include mobile('sm', ('py-16'));
-      @include mobile('md', ('py-28', 'items-start'));
-      @include mobile('lg', ('py-36'));
+      @include twMob('sm', ('py-16'));
+      @include twMob('md', ('py-28', 'items-start'));
+      @include twMob('lg', ('py-36'));
     }
 
     #{$carousel}__accent {
@@ -45,17 +45,17 @@
 
     #{$carousel}__content {
       @apply flex items-center flex-col;
-      @include mobile('lg', ('flex-row'));
+      @include twMob('lg', ('flex-row'));
     }
 
     #{$carousel}__date {
       @apply relative flex justify-center mb-5 block;
-      @include mobile('lg', ('flex-row', 'items-center', 'mb-0', 'justify-start'));
+      @include twMob('lg', ('flex-row', 'items-center', 'mb-0', 'justify-start'));
 
       &:after {
-        @apply w-[50px] h-[1px] bg-neutral-100 mx-5 hidden;
-        @include mobile('lg', ('block'));
         content: '';
+        @apply w-[50px] h-[1px] bg-neutral-100 mx-5 hidden;
+        @include twMob('lg', ('block'));
       }
     }
 

@@ -1,15 +1,14 @@
 .footer {
   @apply bg-[#212529] py-5 pb-0 text-white;
-  @include mobile('lg', ('py-16'));
+  @include twMob('lg', ('py-16'));
 
   &__container {
     @apply text-white flex flex-col justify-between;
-    @include mobile('lg', ('flex-row'));
+    @include twMob('md', ('flex-row'));
   }
 
   &__col {
-    @apply mb-10;
-    @include mobile('lg', ('mb-0'));
+    @apply mb-10 basis-1/2;
   }
 
   &__content {

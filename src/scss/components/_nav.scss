@@ -1,7 +1,7 @@
 .nav {
   $nav: &;
   @apply flex flex-col items-center;
-  @include mobile('lg', 'flex-row');
+  @include twMob('lg', 'flex-row');
 
   &__item {
     @apply mr-2 px-2 pt-1;
@@ -9,13 +9,11 @@
 
   &--menu {
     #{$nav}__link {
-      @apply inline-block;
-      transition: border-bottom-color .2s linear;
-      border-bottom: 2px solid transparent;
+      @apply inline-block transition border-2 border-transparent border-solid;
 
       &:hover,
       &.active {
-        border-bottom-color: rgba(#F53838, .75);
+        @apply border-b-[#F53838];
       }
     }
   }
@@ -25,24 +23,23 @@
 
     #{$nav}__item {
       @apply text-base basis-1/2 m-0;
-      @include mobile('lg', ('basis-[auto]'));
-      font-family: font(Lora);
+      @include twMob('lg', ('basis-[auto]'));
+      font-family: font('Lora');
     }
 
     #{$nav}__link {
-      transition: border-bottom-color .2s linear;
-      border-bottom: 2px solid transparent;
+      @apply transition border-2 border-transparent border-solid;
 
       &:hover,
       &.active {
-        border-bottom-color: rgba(#F53838, .75);
+        @apply border-b-[#F53838];
       }
     }
   }
 
   &--col {
     @apply flex flex-col items-center;
-    @include mobile('lg', ('items-start'));
+    @include twMob('lg', ('items-start'));
 
     #{$nav}__item {
       @apply p-0 mb-5;
@@ -54,14 +51,14 @@
 
     ul {
       @apply text-lg list-disc mt-3;
-      @apply pl-2;
+      @include twMob('lg', ('pl-2'));
 
       li {
         @apply pb-1;
       }
 
       ul {
-        @apply pl-5;
+        @include twMob('lg', ('pl-5'));
       }
     }
 

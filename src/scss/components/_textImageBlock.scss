@@ -1,11 +1,11 @@
 .textImageBlock {
   @apply flex flex-col-reverse justify-between items-center mx-0;
-  @include mobile('md', ('mx-[-20px]'));
-  @include mobile('lg', ('flex-row'));
+  @include twMob('md', ('mx-[-20px]'));
+  @include twMob('lg', ('flex-row'));
 
   &--reverse {
     @apply flex-col-reverse;
-    @include mobile('lg', ('flex-row-reverse'));
+    @include twMob('lg', ('flex-row-reverse'));
   }
 
   &__col {

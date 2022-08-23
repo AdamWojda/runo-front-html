@@ -4,10 +4,12 @@
   }
 
   &__content {
-    @apply text-lg;
+    @apply text-base text-left;
+    @include twMob('md', ('text-lg'));
 
     p {
-      @apply py-10 flex;
+      @apply py-5 flex;
+      @include twMob('md', ('py-10'));
 
       &:first-child {
         @apply pt-0;
@@ -19,7 +21,8 @@
     }
 
     img {
-      @apply max-w-[50%] px-5;
+      @apply px-5;
+      @include twMob('md', ('max-w-[50%]'));
     }
 
     blockquote {

@@ -1,6 +1,6 @@
 .archive {
   &__container {
-    @apply flex;
+    @apply flex flex-row pl-5;
   }
 
   &__sidebar {
@@ -10,5 +10,4 @@
   &__list {
     @apply basis-3/4;
   }
-
 }

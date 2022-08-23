@@ -8,11 +8,11 @@
 
     #{$block}__filters {
       @apply mb-10 flex flex-col justify-between;
-      @include mobile('lg', ('flex-row'));
+      @include twMob('lg', ('flex-row'));
 
       .nav {
         @apply mb-5;
-        @include mobile('lg', ('mb-0'));
+        @include twMob('lg', ('mb-0'));
       }
     }
   }
@@ -51,6 +51,7 @@
 
     #{$block}__image {
       @apply w-full min-h-[600px];
+      @include twMob('lg', ('min-h-[auto]'));
 
       img {
         height: 100%;
@@ -61,7 +62,7 @@
   &--theme1 {
     #{$block}__image {
       img {
-        @apply max-h-96;
+        @include twMob('lg', ('max-h-96'));
       }
     }
 

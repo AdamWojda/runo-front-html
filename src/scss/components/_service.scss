@@ -1,0 +1,95 @@
+.center-heading {
+  @apply text-center;
+
+  .section-title {
+    @apply text-[28px] text-[#3B566E] tracking-wide leading-9 mb-5;
+  }
+
+  &.colored {
+    .section-title {
+      @apply text-white;
+    }
+  }
+}
+
+.center-text {
+  @apply text-center text-base text-[#6F8BA4] leading-7 mb-10;
+
+  &.colored {
+    @apply text-[#C7E5FF];
+  }
+
+  p {
+    @apply mb-8;
+  }
+}
+
+.services-small-item {
+  @apply block bg-white rounded-md text-center transition-all relative z-20 mb-8 py-10 px-6;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+
+  &:before {
+    content: '';
+    @apply absolute w-full h-full top-0 left-0 rounded-md opacity-0 transition-all;
+    background-image: linear-gradient(135deg, #b24592 0%, #f15f79 100%);
+  }
+
+  &.active:before,
+  &:hover:before {
+    @apply opacity-100;
+  }
+
+  &.active .icon:before,
+  &:hover .icon:before {
+    @apply opacity-25;
+  }
+
+  &:hover {
+    @apply mt-[-15px];
+  }
+
+  &.active .icon i,
+  &:hover .icon i {
+    @include icon-clip(#fff, #fff);
+  }
+
+  &.active .services-title,
+  &:hover .services-title {
+    @apply text-white;
+  }
+
+  &.active p,
+  &:hover p {
+    @apply text-white;
+  }
+
+  &:hover + .item-bg {
+    @apply bottom-6;
+  }
+
+  .icon {
+    @apply w-[139px] h-[113px] m-auto relative mb-5 transition-all;
+
+    i {
+      @apply block h-[67px] absolute w-full top-[22px] z-20 leading-[67px] text-[28px] transition-all;
+      @include icon-clip(#b24592, #f15f79);
+    }
+  }
+
+  .services-title {
+    @apply text-base font-[#3B566E] tracking-tight mb-4 relative z-20 transition-all;
+  }
+
+  p {
+    @apply text-sm text-[#6F8BA4] tracking-wider leading-[28px] z-20 relative transition-all mb-6;
+  }
+
+  .button {
+    @apply relative z-20;
+
+    i {
+      @apply w-[42px] h-[42px] leading-[42px] text-center rounded-full text-white pl-1;
+      background-image: linear-gradient(135deg, #b24592 0%, #f15f79 100%);
+    }
+  }
+}

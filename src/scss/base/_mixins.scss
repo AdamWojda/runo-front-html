@@ -48,7 +48,7 @@
   :-ms-input-placeholder      {@content}
 }
 
-@mixin mobile($type, $list) {
+@mixin twMob($type, $list) {
   @each $prop in $list {
     @apply #{$type}:#{$prop};
   }
@@ -56,6 +56,11 @@
 
 @mixin flex-center() {
   @apply flex flex-col items-center justify-center;
+}
+@mixin icon-clip($firstColor, $secondColor) {
+  background: linear-gradient(135deg, $firstColor 0%, $secondColor 100%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @mixin absolute-center() {

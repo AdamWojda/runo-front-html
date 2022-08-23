@@ -6,9 +6,7 @@
   }
 
   &__par {
-    @apply text-xl px-5 max-h-[0] overflow-y-hidden;
-    transition: position .25s ease;
-    transition: 0.5s ease-in-out;
+    @apply text-xl px-5 max-h-[0] overflow-y-hidden transition-all;
   }
 
   &__item {

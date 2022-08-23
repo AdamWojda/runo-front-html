@@ -20,24 +20,27 @@
 /* Splide Carousel */
 @import 'splide/template/default/index';
 
+/* Views */
+@import 'views/archive';
+@import 'views/post';
+@import 'views/footer';
+@import 'views/header';
+
 /* Utils */
-@import 'components/heading';
-@import 'components/post';
+@import 'utils/heading';
+@import 'utils/general';
+@import 'utils/button';
+@import 'utils/list';
+@import 'utils/logo';
+@import 'utils/section';
+@import 'utils/tag';
+
 /* Components */
-@import 'components/general';
 @import 'components/block';
-@import 'components/button';
 @import 'components/carousel';
 @import 'components/excerpt';
-@import 'components/footer';
-@import 'components/header';
-@import 'components/list';
-@import 'components/logo';
 @import 'components/mobilePhoneBlock';
 @import 'components/nav';
-@import 'components/section';
-@import 'components/tag';
 @import 'components/textImageBlock';
 @import 'components/accordion';
-@import 'components/archive';
-@import 'components/services';
+@import 'components/service';

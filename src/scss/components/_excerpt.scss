@@ -3,11 +3,11 @@
 
   &__container {
     @apply text-white flex flex-col justify-between;
-    @include mobile('lg', ('flex-row'));
+    @include twMob('lg', ('flex-row'));
   }
 
   &__copyright {
     @apply mb-5;
-    @include mobile('lg', ('mb-0'));
+    @include twMob('lg', ('mb-0'));
   }
 }

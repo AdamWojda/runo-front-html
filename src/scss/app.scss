@@ -20,11 +20,6 @@
 /* Splide Carousel */
 @import 'splide/template/default/index';
 
-/* Views */
-@import 'views/archive';
-@import 'views/post';
-@import 'views/footer';
-@import 'views/header';
 
 /* Utils */
 @import 'utils/heading';
@@ -34,6 +29,12 @@
 @import 'utils/logo';
 @import 'utils/section';
 @import 'utils/tag';
+
+/* Views */
+@import 'views/archive';
+@import 'views/post';
+@import 'views/footer';
+@import 'views/header';
 
 /* Components */
 @import 'components/block';

@@ -54,7 +54,7 @@
       @apply h-[280px];
 
       img {
-        @apply h-full rounded-md;
+        @apply h-full rounded-md min-h-[280px] w-full;
       }
     }
   }

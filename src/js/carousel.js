@@ -8,7 +8,6 @@ class Carousel {
   }
 
   init() {
-    console.log(this.carousels);
     this.carousels.forEach((carousel) => {
       new Splide( carousel, this.getConfig(carousel.dataset.type) ).mount(
           { Intersection }
@@ -30,14 +29,12 @@ class Carousel {
   getConfig(type = 'hero') {
     const configurations = {
       'hero': {
-        type         : 'loop',
         arrows       : false,
         autoplay     : 'pause',
         intersection : this.intersectionSettings(),
         perPage      : 1,
       },
       'carousel': {
-        type         : 'loop',
         arrows       : true,
         autoplay     : 'pause',
         perPage      : 3,

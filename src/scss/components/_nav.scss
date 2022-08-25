@@ -53,8 +53,8 @@
   }
 
   &--search {
-    @apply hidden;
-    @include twMob('lg', ('block'));
+    @apply hidden items-center;
+    @include twMob('lg', ('flex'));
   }
 
   &--categories {

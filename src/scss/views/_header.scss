@@ -20,7 +20,7 @@
     }
 
     .nav {
-      @apply relative items-start;
+      @apply relative;
 
       &:after {
         content: '';

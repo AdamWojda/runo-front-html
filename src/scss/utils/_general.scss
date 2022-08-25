@@ -1,7 +1,7 @@
 html {
   font-family: font(Spartan);
+  visibility: visible !important;
 }
-
 .container {
   @apply p-5 text-[#0B132A] text-center max-w-[100%] w-full;
   @include twMob('md', ('mx-auto', 'max-w-[1300px]'));

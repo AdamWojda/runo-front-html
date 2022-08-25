@@ -9,7 +9,8 @@
 
   &--menu {
     #{$nav}__link {
-      @apply inline-block transition border-2 border-transparent border-solid;
+      @apply text-2xl mb-5 inline-block transition border-2 border-transparent border-solid;
+      @include twMob('lg', ('text-base', 'mb-0'));
 
       &:hover,
       &.active {
@@ -44,6 +45,16 @@
     #{$nav}__item {
       @apply p-0 mb-5;
     }
+  }
+
+  &--social {
+    @apply flex flex-row items-center;
+
+  }
+
+  &--search {
+    @apply hidden;
+    @include twMob('lg', ('block'));
   }
 
   &--categories {

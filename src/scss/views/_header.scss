@@ -11,11 +11,16 @@
   }
 
   &__nav {
-    @apply text-white hidden;
-    @include twMob('md', ('flex'));
+    @apply text-white hidden absolute left-0;
+    @include twMob('lg', ('flex', 'relative'));
+
+    &--active {
+      @apply flex py-5 px-[10px] z-20 top-[72px] bg-zinc-700 w-full flex-col items-start;
+      @include twMob('md', ('top-[88px]'));
+    }
 
     .nav {
-      @apply relative;
+      @apply relative items-start;
 
       &:after {
         content: '';
@@ -24,6 +29,38 @@
 
       &:last-child:after {
         @apply hidden;
+      }
+    }
+  }
+
+  &__mobile {
+    @apply block;
+    @include twMob('lg', ('hidden'));
+
+    &__link {
+      @apply block relative w-5 h-1;
+    }
+
+    &__link--active &__line {
+      @apply opacity-0;
+
+      &:first-child {
+        @apply -rotate-45 opacity-100;
+      }
+      &:last-child {
+        @apply rotate-45 opacity-100 -translate-y-2;
+      }
+    }
+
+    &__line {
+      @apply block absolute h-0.5 w-7 text-white bg-current transform transition duration-500 ease-in-out;
+
+      &:first-child {
+        @apply -translate-y-2
+      }
+
+      &:last-child {
+        @apply translate-y-2;
       }
     }
   }

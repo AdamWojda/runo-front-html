@@ -51,7 +51,11 @@
     }
 
     #{$list}__photo {
-      @apply h-[280px];
+      @apply h-[280px] relative;
+
+      .tag {
+        @apply absolute top-5 right-5 text-white;
+      }
 
       img {
         @apply h-full rounded-md min-h-[280px] w-full;
@@ -83,7 +87,11 @@
     }
 
     #{$list}__photo {
-      @apply h-[350px];
+      @apply h-[350px] relative;
+
+      .tag {
+        @apply absolute top-5 right-5;
+      }
     }
   }
 

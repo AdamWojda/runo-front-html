@@ -9,12 +9,16 @@
 
   &--menu {
     #{$nav}__link {
-      @apply text-2xl mb-5 inline-block transition border-2 border-transparent border-solid;
+      @apply text-2xl mb-5 inline-block transition relative;
       @include twMob('lg', ('text-base', 'mb-0'));
 
-      &:hover,
-      &.active {
-        @apply border-b-[#F53838];
+      &:before {
+        content: '';
+
+      }
+
+      &:hover &:before,
+      &.active &:before {
       }
     }
   }
@@ -29,11 +33,10 @@
     }
 
     #{$nav}__link {
-      @apply transition border-2 border-transparent border-solid;
+      @apply transition;
 
       &:hover,
       &.active {
-        @apply border-b-[#F53838];
       }
     }
   }
